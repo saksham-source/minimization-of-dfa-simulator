@@ -1,0 +1,61 @@
+@media print {
+  :root {
+    --bg: #FFFFFF !important;
+    --surface: #FFFFFF !important;
+    --surface-subtle: #F4F5F7 !important;
+    --text: #111111 !important;
+    --muted: #3A3F4B !important;
+    --border: #C8CDD5 !important;
+    --accent: #1E3299 !important;
+  }
+
+  body {
+    background: #FFFFFF !important;
+    color: #111111 !important;
+    font-size: 11pt;
+    line-height: 1.45;
+  }
+
+  .app-header,
+  .workspace-subbar,
+  .workspace-rail,
+  .workspace-inspector,
+  .playback-bar,
+  .no-print,
+  .toast-region,
+  .skip-link {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .workspace-shell {
+    padding-bottom: 0 !important;
+  }
+
+  .workspace-grid {
+    display: block !important;
+    padding: 0 !important;
+  }
+
+  .panel {
+    border: 1px solid #C8CDD5 !important;
+    break-inside: avoid;
+    margin-bottom: 14pt;
+  }
+
+  .data-table thead {
+    display: table-header-group;
+  }
+
+  .data-table tr {
+    break-inside: avoid;
+  }
+
+  svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
